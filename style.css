@@ -86,7 +86,7 @@ header {
 
 .footer {
     grid-area: footer;
-    background-color: #6a6969;
+    background-color: #474545;
     border-radius: 20px;
     text-align: center;
     padding: 30px; /* Aumenta o tamanho do rodapé */
