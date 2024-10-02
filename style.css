@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fefefe; /* Cor de fundo do site */
+    background-color: #ffffff; /* Cor de fundo do site */
     color: #ffffff; /* Cor do texto */
     line-height: 1.6; /* Espaçamento entre linhas de texto */
     width: 100%;
@@ -87,10 +87,10 @@ header {
 .item:nth-child(5) { grid-area: item4; }
 
 .item {
-    background-color: #7a2e2e;
+    background-color: #910202;
     border-radius: 20px; /* Arredonda os cantos do item */
     display: flex; /* Organiza o conteúdo do item como um flex container */
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -99,7 +99,7 @@ header {
     font: bold;
     grid-area: footer;
     background-color: #000000;
-    border-radius: 20px;
+    
     text-align: center;
     padding: 3px; /* Aumenta o tamanho do rodapé */
 }
@@ -129,6 +129,13 @@ header {
 img {
     object-fit: contain;
     max-width: 90%;
-    max-height: 90%;
+    max-height: 100%;
     border-radius: 15px;
+  }
+  .spotify {
+    object-fit: contain;
+    max-width: 60%;
+    max-height: 60%;
+    display: flex;
+    transform: translatex(40px);
   }
