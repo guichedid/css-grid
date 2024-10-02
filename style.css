@@ -5,14 +5,14 @@
 }
 
 body {
-    
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #d4d0d0; /* Cor de fundo do site */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefefe; /* Cor de fundo do site */
+    color: #ffffff; /* Cor do texto */
     line-height: 1.6; /* Espaçamento entre linhas de texto */
     width: 100%;
     height: 100%;
-    
 }
+
 header {
     display: flex; /* Usando Flexbox para organizar os itens do cabeçalho */
     justify-content: space-between; /* Espaçamento entre logo e menu */
@@ -20,14 +20,20 @@ header {
     width: 100%;
     height: 70px;
     padding: 10px;
-    background-color: #ba3737; /* Cor de fundo do cabeçalho */
+    background-color: #fc0000; /* Cor de fundo do cabeçalho */
+    box-shadow: 0px 5px 20px rgb(87, 9, 9); /* Sombra para destacar o cabeçalho */
 }
 
 .logo {
-    width: 45px;
-    height: 45px;
-    background-color: #ba3737;
+    width: 70px;
+    height: 70px;
+    background-color: #fc0000;
     border-radius: 10px; /* Bordas arredondadas para o logo */
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
 }
 
 .menu {
@@ -36,7 +42,7 @@ header {
 }
 
 .menu li a {
-    color: #fff; /* Cor do texto dos links */
+    color:#000000; /* Cor do texto dos links */
     text-decoration: none; /* Remove sublinhado dos links */
     padding: 10px 20px;
     border-radius: 20px;
@@ -44,8 +50,9 @@ header {
 }
 
 .menu li a:hover {
-    background-color: #8c1e1e; /* Cor de fundo ao passar o mouse */
+    background-color: #c01616; /* Cor de fundo ao passar o mouse */
 }
+
 .container {
     max-width: 1200px; /* Limita a largura máxima do contêiner */
     margin: 0 auto; /* Centraliza o contêiner */
@@ -58,25 +65,29 @@ header {
         "footer footer footer"; /* Define as áreas nomeadas para cada elemento */
     gap: 20px; /* Espaçamento entre as áreas do grid */
     padding: 20px;
-    border: 1px solid #fff; /* Bordas para destacar o contêiner */
+
 }
+
 .sidenav {
-    display: flex;
-    justify-content: center;
     grid-area: sidenav; /* Define a área do grid que a barra lateral ocupará */
     background-color: #000000; /* Fundo azul escuro */
-    color: #F0F4FF; /* Cor do texto em azul claro */
-    border-radius: 01px; /* Bordas arredondadas */
-    padding: 10px;
-    box-shadow: 0px 5px 20px rgb(81, 0, 0); /* Sombra para destacar o cabeçalho */
+    color: #ffffff; /* Cor do texto em azul claro */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 20px;
 }
+.estilos {
+    display: flex;
+    list-style: armenian;
+    color: white;
+}
+
 .item:nth-child(2) { grid-area: item1; }
 .item:nth-child(3) { grid-area: item2; }
 .item:nth-child(4) { grid-area: item3; }
 .item:nth-child(5) { grid-area: item4; }
 
 .item {
-    background-color: #ccc;
+    background-color: #7a2e2e;
     border-radius: 20px; /* Arredonda os cantos do item */
     display: flex; /* Organiza o conteúdo do item como um flex container */
     flex-direction: column;
@@ -85,11 +96,12 @@ header {
 }
 
 .footer {
+    font: bold;
     grid-area: footer;
-    background-color: #474545;
+    background-color: #000000;
     border-radius: 20px;
     text-align: center;
-    padding: 30px; /* Aumenta o tamanho do rodapé */
+    padding: 3px; /* Aumenta o tamanho do rodapé */
 }
 
 .footer h3 {
@@ -97,6 +109,9 @@ header {
 }
 
 .footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 15px;
 }
 
@@ -111,4 +126,9 @@ header {
     height: 30px;
     border-radius: 50%; /* Ícones arredondados */
 }
-
+img {
+    object-fit: contain;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 15px;
+  }
